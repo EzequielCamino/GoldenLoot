@@ -311,6 +311,24 @@ header {
     }
 
 }
+
+/* *****************ANIMACIONES*************** */
+@keyframes left-in {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.hero_image {
+    position: relative;
+    animation-name: left-in;
+    animation-duration: 1s;
+}
+
 /* ******************************************* */
 /* ******************INDEX END**************** */
 /* ******************************************* */
