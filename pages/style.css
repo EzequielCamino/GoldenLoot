@@ -83,6 +83,7 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 3vw;
+    background-image: linear-gradient(to right, white, rgb(230, 177, 44));
 }
 
 .article1 {
