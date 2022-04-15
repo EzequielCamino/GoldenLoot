@@ -84,6 +84,7 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 3vw;
+    /* **************GRADIENT************ */
     background-image: linear-gradient(to right, white, rgb(230, 177, 44));
 }
 
@@ -148,28 +149,27 @@ header {
     grid-area: calzado;
 }
 
-.calzado:hover{
-    transform: scale(0.95);
-}
-
 .indumentaria {
     grid-area: indumentaria;
-}
-
-.indumentaria:hover{
-    transform: scale(0.95);
 }
 
 .accesorios {
     grid-area: accesorios;
 }
 
-.accesorios:hover{
-    transform: scale(0.95);
-}
-
 .todos_los_productos {
     grid-area: todos_los_productos;
+}
+
+/* ********************TRANSFORM****************** */
+.calzado:hover{
+    transform: scale(0.95);
+}
+.indumentaria:hover{
+    transform: scale(0.95);
+}
+.accesorios:hover{
+    transform: scale(0.95);
 }
 
 .todos_los_productos:hover{
@@ -312,7 +312,7 @@ header {
 
 }
 
-/* *****************ANIMACIONES*************** */
+/* ******************ANIMATION**************** */
 @keyframes left-in {
     0% {
         left: -100%;
