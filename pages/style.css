@@ -147,16 +147,32 @@ header {
     grid-area: calzado;
 }
 
+.calzado:hover{
+    transform: scale(0.95);
+}
+
 .indumentaria {
     grid-area: indumentaria;
+}
+
+.indumentaria:hover{
+    transform: scale(0.95);
 }
 
 .accesorios {
     grid-area: accesorios;
 }
 
+.accesorios:hover{
+    transform: scale(0.95);
+}
+
 .todos_los_productos {
     grid-area: todos_los_productos;
+}
+
+.todos_los_productos:hover{
+    transform: scale(0.95);
 }
 
 .calzado a img , .indumentaria a img, .accesorios a img, .todos_los_productos a img {
