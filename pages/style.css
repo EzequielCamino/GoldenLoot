@@ -17,7 +17,7 @@ header {
 }
 
 header h1 {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 
 .logo {
@@ -25,16 +25,22 @@ header h1 {
     align-items: center;
     gap: 0.5vw;
     margin-left: 0.5vw;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 
 .logo a img {
-    height: 2vw;
-    width: 2vw;
+    height: 2rem;
+    width: 2rem;
 }
 
 .icon {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.icon:hover{
+    color:white;
+    transition: 0.2s;
 }
 
 .form-control {
@@ -50,8 +56,22 @@ header h1 {
 }
 
 @media screen and (max-width:768px) {
-    .logo {
-        font-size: 0.5rem;
+
+    .form-control {
+        width: 25vw;
+    }
+
+    header h1 {
+        font-size: 1rem;
+    }
+
+    .logo a img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .logo{
+        font-size: 1rem;
     }
     .icon {
         font-size: 1rem;
@@ -209,6 +229,11 @@ header h1 {
 
 .encargos_button {
     text-decoration: none;
+    color: rgb(230, 177, 44);
+}
+
+.encargos_button:hover {
+    color: rgb(255, 196, 46);
 }
 
 .encargos img {
@@ -306,6 +331,11 @@ header h1 {
 
 .showroom_data a {
     text-decoration: none;
+    color: black;
+}
+
+.showroom_data>a:hover{
+    color: rgb(230, 177, 44);
 }
 
 @media screen and (max-width:768px) {
@@ -372,6 +402,12 @@ footer {
 
 .footer_data ul li a {
     text-decoration: none;
+    color: black;
+}
+
+.footer_data>ul>li>a:hover {
+    color: rgb(230, 177, 44);
+    transition: 0.4s;
 }
 
 .footer_data ul li i {
@@ -404,7 +440,7 @@ footer {
 /* ***********INICIO productos.html*********** */
 /* ******************************************* */
 
-/* #products {
+#products {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
@@ -435,7 +471,7 @@ footer {
 
 .product5 {
     grid-area: product5;
-} */
+}
 
 .product1 img, .product2 img, .product3 img, .product4 img, .product5 img {
     width: 100%;
@@ -459,14 +495,23 @@ footer {
     gap: 1vw;
 }
 
+.btn-light:hover{
+    color: rgb(230, 177, 44);
+}
+
 .return { /* USADO PARA TODOS LOS RETURN */
     display: flex;
     margin-top: 2vw;
     justify-content: center;
     text-decoration: none;
+    color: black;
 }
 
-/* @media screen and (max-width:475px) {
+.return:hover{ /* USADO PARA TODOS LOS RETURN */
+    color:rgb(230, 177, 44);
+}
+
+@media screen and (max-width:899px) {
     #products {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
@@ -483,7 +528,7 @@ footer {
     .return {
         margin-bottom: 5vw;
     }
-} */
+}
 
 /* ******************************************* */
 /* ************END productos.html************* */
@@ -522,22 +567,27 @@ footer {
 .cotizacion_text_form {
     display: flex;
     flex-direction: column;
-    gap: 0.5vw;
+    gap: 1vw;
     margin-top: 1vw;
     align-items: center;
 }
 
 .cotizacion_text_form textarea {
     resize: none;
-    width: 10vw;
+    width: 40vw;
 }
 
 .cotizacion_text_form_button {
     display: flex;
     justify-content: space-around;
     margin-top: 1vw;
-    gap: 1vw;
+    gap: 5vw;
     border-radius: 10%;
+}
+
+.form-control:focus {
+    border-color: rgb(230, 177, 44);
+    box-shadow: 0 0 0 0.25rem rgb(255 196 46 / 25%);    
 }
 
 @media screen and (max-width:768px) {
@@ -588,6 +638,16 @@ footer {
     flex-direction: column;
     gap: 5px;
     text-decoration: none;
+}
+
+.accordion-button:focus{
+    border-color: rgb(230, 177, 44);
+    box-shadow: 0 0 0 0.25rem rgb(255 196 46 / 25%);
+}
+
+.accordion-button:not(.collapsed){
+    color: black;
+    background-color: rgb(230, 177, 44);
 }
 
 /* ******************************************* */

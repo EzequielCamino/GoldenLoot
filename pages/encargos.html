@@ -32,37 +32,28 @@
     <main>
         <section id="cotizacion">
             <img src="../media/hero_encargos.jpg" alt="Encargos">
-            <section class="cotizacion_text">
-                <h2>ENCARGOS</h2>
-                <h2>¡Pedí tu cotización!</h2>
-                <form action="">
-                    <div class="mb-3">
-                        <label class="form-label">Nombre y Apellido</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <select class="form-select">
+            <div>
+                <section class="cotizacion_text">
+                    <h2>ENCARGOS</h2>
+                    <h2>¡Pedí tu cotización!</h2>
+                    <form action="" class="cotizacion_text_form">
+                        <input class="form-control" type="text" name="name" placeholder="Nombre y apellido" required>
+                        <input class="form-control" type="email" name="email" placeholder="Ingresa tu email" required>
+                        <select class="form-control" name="article" required>
                             <option value="" hidden selected>Artículo a pedir</option>
                             <option value="snkr">Calzado</option>
                             <option value="wear">Indumentaria</option>
                             <option value="acc">Accesorios</option>
                             <option value="other">Otros</option>
                         </select>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Escribe tu mensaje</label>
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-                    <div class="cotizacion_text_form_button">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                        <button type="rest" class="btn btn-primary">Limpiar</button>
-                    </div>
-                </form>
-            </section>
+                        <textarea class="form-control" name="message" placeholder="Deja tu mensaje" rows="5" required></textarea>
+                        <div class="cotizacion_text_form_button">
+                            <button class="btn btn-warning" type="reset">Limpiar</button>
+                            <button class="btn btn-warning" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
         </section>
         <a href="../index.html" class="return">Volver a página principal</a>
     </main>
