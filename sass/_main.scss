@@ -1,0 +1,174 @@
+#destacados {
+    display: grid;
+    grid-template-rows: 20% 75% 5%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "destacados_title destacados_title destacados_title destacados_title"
+    "article1 article2 article3 article4"
+    "ellipsis ellipsis ellipsis ellipsis"
+    ;
+    gap: 1vw;
+    margin: 2.5vw;
+    margin-bottom: 5vw;
+    h2 {
+        grid-area: destacados_title;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vw;
+        /* **************GRADIENT************ */
+        background-image: linear-gradient(to right, white, $colorPrincipal);
+    }
+    .article1 {
+        grid-area: article1;
+    }
+    .article2 {
+        grid-area: article2;
+    }
+    .article3 {
+        grid-area: article3;
+    }
+    .article4 {
+        grid-area: article4;
+    }
+    .article1 img, .article2 img, .article3 img, .article4 img {
+        height: 100%;
+        width: 100%;
+    }
+    .ellipsis {
+        grid-area: ellipsis;
+        display: flex;
+        justify-content: center;
+        gap: 0.2vw;
+    }
+
+}
+.productos {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 1.2fr repeat(2, 0.9fr);
+    grid-template-areas:
+    "calzado indumentaria accesorios"
+    "calzado todos_los_productos todos_los_productos"
+    ;
+    margin: 2.5vw;
+    gap: 10px;
+    .calzado {
+        grid-area: calzado;
+        &:hover{
+            transform: scale(0.95);
+        }
+    } 
+    .indumentaria {
+        grid-area: indumentaria;
+        &:hover{
+            transform: scale(0.95);
+        }
+    }
+    .accesorios {
+        grid-area: accesorios;
+        &:hover{
+            transform: scale(0.95);
+        }
+    }
+    .todos_los_productos {
+        grid-area: todos_los_productos;
+        &:hover{
+            transform: scale(0.95);
+        }
+    }
+    .calzado a img , .indumentaria a img, .accesorios a img, .todos_los_productos a img {
+        height: 100%;
+        width: 100%;
+    }
+}
+.encargos {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "encargos_img encargos_text"
+    ;
+    margin: 2.5vw;
+    margin-top: 5vw;
+    img {
+        grid-area: encargos_img;
+        width: 100%;
+        height: 100%;
+    }
+    .encargos_text {
+        grid-area: encargos_text;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 5vw;
+        h2 {
+            font-size: 4vw;
+        }
+        p {
+            font-size: 2vw;
+        }
+        button {
+            font-size: 2.5vw;
+        }
+        .encargos_button {
+            text-decoration: none;
+            color: $colorPrincipal;
+        }
+        &:hover {
+            color: $colorSecundario;
+        }
+    }
+}
+.contacto {
+    display: grid;
+    grid-template-rows: 40vw;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "maprouter showroom"
+    ;
+    background-image: url(../media/showroom.jpg);
+    background-position: center;
+    margin-top: 5vw;
+    .maprouter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #gmap_canvas{
+            grid-area: maprouter;
+            width: 80%;
+            height: 80%;
+        }
+    }
+    .showroom {
+        grid-area: showroom;
+        display: flex;
+        flex-direction: column;
+        margin-left: 4vw;
+        justify-content: center;
+        h2 {
+            margin-bottom: 4vw;
+            font-size: 3vw;
+        }
+        .showroom_data {
+            display: flex;
+            margin-top: 1vw;
+            align-items: center;
+            font-size: 2vw;
+            i {
+                margin-right: 1vw;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: $colorPrincipal;
+                }
+            }
+            &:hover{
+                color: $colorPrincipal;
+            }
+        }
+    }
+}

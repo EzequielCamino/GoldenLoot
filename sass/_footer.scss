@@ -1,0 +1,33 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+    .footer {
+        margin-top: 4vw;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1vw;
+        .footer_data {
+            display: flex;
+            flex-direction: column;
+            ul li {
+                list-style: none;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    color: $colorPrincipal;
+                    transition: 0.4s;
+                }
+            }
+            i {
+                margin-right: 0.5vw;
+            }
+        }   
+    }
+    .copyright {
+        margin-top: 2vw;
+        font-size: 1vw;
+    }
+}

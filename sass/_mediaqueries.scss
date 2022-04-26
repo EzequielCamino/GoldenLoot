@@ -1,0 +1,91 @@
+// header
+@media screen and (max-width:768px) {
+    header h1 {
+        font-size: 1rem;
+    }
+    .logo{
+        font-size: 1rem;
+        a img {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+    .form-control {
+        width: 25vw;
+    }
+
+    .icon {
+        font-size: 1rem;
+    }
+}
+
+
+// main
+@media screen and (max-width:768px) {
+    #destacados {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15%;
+        padding-right: 15%;
+        gap: 0px;
+        margin-bottom: 10vw;
+        h2{
+            font-size: 5vw;
+        }
+    }
+    .article2, .article3, .article4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .productos{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .encargos{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10vw;
+    }
+    .encargos_text {
+        h2 {
+        font-size: 8vw;
+        }
+        p{
+            font-size: 4vw;
+        }
+        button {
+            font-size: 5vw;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contacto  {
+        grid-template-rows: 60vw;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 10vw;
+    }
+    .showroom h2 {
+        font-size: 4vw;
+    }
+    .showroom_data {
+        font-size: 3vw;
+    }
+}
+
+
+// footer
+@media screen and (max-width:768px) {
+    .footer {
+        margin-top: 4vw;
+        display: flex;
+        justify-content: space-around;
+        font-size: 2.5vw;
+    }
+}
