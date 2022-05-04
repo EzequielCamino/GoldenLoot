@@ -6,10 +6,17 @@
     transition: 1s;
 }
 
-// Variables
-$colorPrincipal: rgb(230, 177, 44);
-$colorSecundario: rgb(255, 196, 46);
+// Maps
+$estilos:(
+    colorPrincipal: rgb(230, 177, 44),
+    colorSecundario: rgb(255, 196, 46),
+);
 
+// Mixin
+@mixin boxSize() {
+    height: 100%;
+    width: 100%;
+}
 
 @import 'header.scss';
 @import 'main.scss';

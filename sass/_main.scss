@@ -17,23 +17,17 @@
         justify-content: center;
         font-size: 3vw;
         /* **************GRADIENT************ */
-        background-image: linear-gradient(to right, white, $colorPrincipal);
+        background-image: linear-gradient(to right, white, map-get($estilos, colorPrincipal));
     }
-    .article1 {
-        grid-area: article1;
+    // For
+    @for $i from 1 to 5 {
+        .article#{$i} {
+            grid-area: article#{$i};
+        }
     }
-    .article2 {
-        grid-area: article2;
-    }
-    .article3 {
-        grid-area: article3;
-    }
-    .article4 {
-        grid-area: article4;
-    }
+
     .article1 img, .article2 img, .article3 img, .article4 img {
-        height: 100%;
-        width: 100%;
+        @include boxSize;
     }
     .ellipsis {
         grid-area: ellipsis;
@@ -53,6 +47,7 @@
     ;
     margin: 2.5vw;
     gap: 10px;
+    // Extend
     .calzado {
         grid-area: calzado;
         &:hover{
@@ -60,26 +55,19 @@
         }
     } 
     .indumentaria {
+        @extend .calzado;
         grid-area: indumentaria;
-        &:hover{
-            transform: scale(0.95);
-        }
     }
     .accesorios {
+        @extend .calzado;
         grid-area: accesorios;
-        &:hover{
-            transform: scale(0.95);
-        }
     }
     .todos_los_productos {
+        @extend .calzado;
         grid-area: todos_los_productos;
-        &:hover{
-            transform: scale(0.95);
-        }
     }
     .calzado a img , .indumentaria a img, .accesorios a img, .todos_los_productos a img {
-        height: 100%;
-        width: 100%;
+        @include boxSize;
     }
 }
 .encargos {
@@ -93,8 +81,7 @@
     margin-top: 5vw;
     img {
         grid-area: encargos_img;
-        width: 100%;
-        height: 100%;
+        @include boxSize;
     }
     .encargos_text {
         grid-area: encargos_text;
@@ -114,11 +101,12 @@
         }
         .encargos_button {
             text-decoration: none;
-            color: $colorPrincipal;
+            color: map-get($estilos, colorPrincipal);
+            &:hover {
+                color: map-get($estilos, colorSecundario);
+            }
         }
-        &:hover {
-            color: $colorSecundario;
-        }
+        
     }
 }
 .contacto {
@@ -163,11 +151,11 @@
                 text-decoration: none;
                 color: black;
                 &:hover{
-                    color: $colorPrincipal;
+                    color: map-get($estilos, colorPrincipal);
                 }
             }
             &:hover{
-                color: $colorPrincipal;
+                color: map-get($estilos, colorPrincipal);
             }
         }
     }

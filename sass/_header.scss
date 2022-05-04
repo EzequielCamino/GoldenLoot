@@ -1,5 +1,5 @@
 header {
-    background-color: $colorPrincipal;
+    background-color: map-get($estilos, colorPrincipal);
     display: flex;
     justify-content: space-between;
     .logo {

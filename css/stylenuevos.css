@@ -76,23 +76,17 @@ header {
   grid-template-areas: "calzado indumentaria accesorios" "calzado todos_los_productos todos_los_productos";
   margin: 2.5vw;
   gap: 10px; }
-  .productos .calzado {
+  .productos .calzado, .productos .indumentaria, .productos .accesorios, .productos .todos_los_productos {
     grid-area: calzado; }
-    .productos .calzado:hover {
+    .productos .calzado:hover, .productos .indumentaria:hover, .productos .accesorios:hover, .productos .todos_los_productos:hover {
       transform: scale(0.95); }
   .productos .indumentaria {
     grid-area: indumentaria; }
-    .productos .indumentaria:hover {
-      transform: scale(0.95); }
   .productos .accesorios {
     grid-area: accesorios; }
-    .productos .accesorios:hover {
-      transform: scale(0.95); }
   .productos .todos_los_productos {
     grid-area: todos_los_productos; }
-    .productos .todos_los_productos:hover {
-      transform: scale(0.95); }
-  .productos .calzado a img, .productos .indumentaria a img, .productos .accesorios a img, .productos .todos_los_productos a img {
+  .productos .calzado a img, .productos .indumentaria a img, .productos .accesorios a img, .productos .todos_los_productos a img, .productos .indumentaria a img, .productos .accesorios a img, .productos .todos_los_productos a img {
     height: 100%;
     width: 100%; }
 
@@ -105,8 +99,8 @@ header {
   margin-top: 5vw; }
   .encargos img {
     grid-area: encargos_img;
-    width: 100%;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
   .encargos .encargos_text {
     grid-area: encargos_text;
     display: flex;
@@ -123,8 +117,8 @@ header {
     .encargos .encargos_text .encargos_button {
       text-decoration: none;
       color: #e6b12c; }
-    .encargos .encargos_text:hover {
-      color: #ffc42e; }
+      .encargos .encargos_text .encargos_button:hover {
+        color: #ffc42e; }
 
 .contacto {
   display: grid;
@@ -183,7 +177,7 @@ footer {
         text-decoration: none;
         color: black; }
         footer .footer .footer_data a:hover {
-          color: #e6b12c;
+          color: #ffc42e;
           transition: 0.4s; }
       footer .footer .footer_data i {
         margin-right: 0.5vw; }

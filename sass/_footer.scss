@@ -17,7 +17,7 @@ footer {
                 text-decoration: none;
                 color: black;
                 &:hover {
-                    color: $colorPrincipal;
+                    color: map-get($estilos, colorSecundario);
                     transition: 0.4s;
                 }
             }
