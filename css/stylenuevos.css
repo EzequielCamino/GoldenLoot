@@ -5,6 +5,13 @@
   box-sizing: content-box;
   transition: 1s; }
 
+/* Usado para todas las hero images */
+.hero_image > img {
+  width: 100%; }
+
+/* ******************************************* */
+/* ***************INICIO HEADER*************** */
+/* ******************************************* */
 header {
   background-color: #e6b12c;
   display: flex;
@@ -36,6 +43,12 @@ header {
     margin-right: 0.5vw;
     margin-top: 0.5vw; }
 
+/* ******************************************* */
+/* *****************HEADER END**************** */
+/* ******************************************* */
+/* ******************************************* */
+/* *****************INICIO MAIN*************** */
+/* ******************************************* */
 #destacados {
   display: grid;
   grid-template-rows: 20% 75% 5%;
@@ -160,6 +173,12 @@ header {
       .contacto .showroom .showroom_data:hover {
         color: #e6b12c; }
 
+/* ******************************************* */
+/* *******************MAIN END**************** */
+/* ******************************************* */
+/* ******************************************* */
+/* ****************INICIO FOOTER************** */
+/* ******************************************* */
 footer {
   display: flex;
   flex-direction: column; }
@@ -185,6 +204,154 @@ footer {
     margin-top: 2vw;
     font-size: 1vw; }
 
+/* ******************************************* */
+/* *****************FOOTER END**************** */
+/* ******************************************* */
+/* ******************************************* */
+/* ***********INICIO productos.html*********** */
+/* ******************************************* */
+#products {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "product1 product2 product3 product4" "product5 product6 product7 product8";
+  gap: 2vw;
+  margin: 2.5vw;
+  margin-top: 5vw; }
+  #products .product1 {
+    grid-area: product1; }
+    #products .product1 img {
+      height: 100%;
+      width: 100%; }
+  #products .product2 {
+    grid-area: product2; }
+    #products .product2 img {
+      height: 100%;
+      width: 100%; }
+  #products .product3 {
+    grid-area: product3; }
+    #products .product3 img {
+      height: 100%;
+      width: 100%; }
+  #products .product4 {
+    grid-area: product4; }
+    #products .product4 img {
+      height: 100%;
+      width: 100%; }
+  #products .product5 {
+    grid-area: product5; }
+    #products .product5 img {
+      height: 100%;
+      width: 100%; }
+  #products .product {
+    background-color: grey;
+    padding: 1vw;
+    margin: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vw; }
+    #products .product form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1vw; }
+      #products .product form .btn-light:hover {
+        color: #e6b12c; }
+
+.return {
+  /* USADO PARA TODOS LOS RETURN */
+  display: flex;
+  margin-top: 2vw;
+  justify-content: center;
+  text-decoration: none;
+  color: black; }
+  .return:hover {
+    color: #e6b12c; }
+
+/* ******************************************* */
+/* ************END productos.html************* */
+/* ******************************************* */
+/* ******************************************* */
+/* *************INICIO encargos.html********** */
+/* ******************************************* */
+#cotizacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100%;
+  grid-template-areas: "img text"; }
+  #cotizacion img {
+    grid-area: img;
+    width: 95%;
+    height: 95%;
+    padding: 2.5vw; }
+  #cotizacion .cotizacion_text {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5vw; }
+    #cotizacion .cotizacion_text .cotizacion_text_form {
+      display: flex;
+      flex-direction: column;
+      gap: 1vw;
+      margin-top: 1vw;
+      align-items: center; }
+      #cotizacion .cotizacion_text .cotizacion_text_form textarea {
+        resize: none;
+        width: 40vw; }
+      #cotizacion .cotizacion_text .cotizacion_text_form .cotizacion_text_form_button {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1vw;
+        gap: 5vw;
+        border-radius: 10%; }
+      #cotizacion .cotizacion_text .cotizacion_text_form .form-control:focus {
+        border-color: #e6b12c;
+        box-shadow: 0 0 0 0.25rem #ffc402; }
+
+/* ******************************************* */
+/* ************END encargos.html************** */
+/* ******************************************* */
+/* ******************************************* */
+/* ****INICIO devoluciones/privacidad.html**** */
+/* ******************************************* */
+.politics_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+/* ******************************************* */
+/* ******END devoluciones/privacidad.html***** */
+/* ******************************************* */
+/* ******************************************* */
+/* *************INICIO faq.html*************** */
+/* ******************************************* */
+.politics_text div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-decoration: none; }
+
+.accordion-button:focus {
+  border-color: #e6b12c;
+  box-shadow: 0 0 0 0.25rem #ffc402; }
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #e6b12c; }
+
+/* ******************************************* */
+/* ***************END faq.html**************** */
+/* ******************************************* */
+/* ******************************************* */
+/* ************INICIO MEDIA QUERIES*********** */
+/* ******************************************* */
+/* HEADER */
 @media screen and (max-width: 768px) {
   header h1 {
     font-size: 1rem; }
@@ -198,6 +365,7 @@ footer {
   .icon {
     font-size: 1rem; } }
 
+/* MAIN */
 @media screen and (max-width: 768px) {
   #destacados {
     display: flex;
@@ -239,9 +407,41 @@ footer {
   .showroom_data {
     font-size: 3vw; } }
 
+/* FOOTER */
 @media screen and (max-width: 768px) {
   .footer {
     margin-top: 4vw;
     display: flex;
     justify-content: space-around;
     font-size: 2.5vw; } }
+
+/* PRODUCTOS */
+@media screen and (max-width: 899px) {
+  #products {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "product1 product2" "product3 product4" "product5 product6" "product7 product8";
+    gap: 2vw;
+    margin-top: 5vw; }
+  .return {
+    margin-bottom: 5vw; } }
+
+/* ENCARGOS */
+@media screen and (max-width: 768px) {
+  #cotizacion {
+    display: flex;
+    flex-direction: column; }
+    #cotizacion .cotizacion_text {
+      margin-bottom: 10vw; }
+    #cotizacion .cotizacion_text_form input {
+      font-size: 10px; }
+    #cotizacion .cotizacion_text_form select {
+      font-size: 10px; }
+    #cotizacion .cotizacion_text_form textarea {
+      width: 50px;
+      font-size: 10px; } }
+
+/* ******************************************* */
+/* **************FIN MEDIA QUERIES************ */
+/* ******************************************* */

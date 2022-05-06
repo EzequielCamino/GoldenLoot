@@ -1,7 +1,7 @@
 {
   "name": "code",
   "version": "1.0.0",
-  "description": "",
+  "description": "En Golden Loot podrás encontrar y comprar calzado, indumentaria y accesorios hype y de streetwear. También hacer encargos específicos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,8 +12,8 @@
     "type": "git",
     "url": "git+https://github.com/EzequielCamino/GoldenLoot.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Sneakers, Streetwear, Zapatillas, Calzado, Nike, Jordan, Hype"],
+  "author": "Ezequiel Camino",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EzequielCamino/GoldenLoot/issues"

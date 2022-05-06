@@ -1,0 +1,52 @@
+/* ******************************************* */
+/* *************INICIO encargos.html********** */
+/* ******************************************* */
+
+#cotizacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "img text"
+    ;
+    img {
+        grid-area: img;
+        width: 95%;
+        height: 95%;
+        padding: 2.5vw;
+    }
+    .cotizacion_text {
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 2.5vw;
+        .cotizacion_text_form {
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+            margin-top: 1vw;
+            align-items: center;
+            textarea {
+                resize: none;
+                width: 40vw;
+            }
+            .cotizacion_text_form_button {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 1vw;
+                gap: 5vw;
+                border-radius: 10%;
+            }
+            .form-control:focus {
+                border-color: map-get($estilos, colorPrincipal);
+                box-shadow: 0 0 0 0.25rem rgb(255, 196, 46 / 25%);    
+            }
+        }
+    }
+}
+
+/* ******************************************* */
+/* ************END encargos.html************** */
+/* ******************************************* */

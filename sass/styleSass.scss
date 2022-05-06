@@ -6,6 +6,11 @@
     transition: 1s;
 }
 
+/* Usado para todas las hero images */
+.hero_image>img {    
+    width: 100%;
+}
+
 // Maps
 $estilos:(
     colorPrincipal: rgb(230, 177, 44),
@@ -21,4 +26,8 @@ $estilos:(
 @import 'header.scss';
 @import 'main.scss';
 @import 'footer.scss';
+@import 'productos.scss';
+@import 'encargos.scss';
+@import 'devoluciones-privacidad.scss';
+@import 'faq.scss';
 @import 'mediaqueries.scss';
