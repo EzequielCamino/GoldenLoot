@@ -11,6 +11,19 @@
     width: 100%;
 }
 
+/* ******************************************* */
+/* *****************ANIMACIONES*************** */
+/* ******************************************* */
+@keyframes left_out {
+    0%{transform: translateX(0);}
+    20%{transform: translateX(-0.2vw);}
+    40%{transform: translateX(-0.4vw);}
+    60%{transform: translateX(-0.6vw);}
+    80%{transform: translateX(-0.8vw);}
+    100%{transform: translateX(-1vw);}
+}
+
+
 // Maps
 $estilos:(
     colorPrincipal: rgb(230, 177, 44),

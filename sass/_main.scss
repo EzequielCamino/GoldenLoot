@@ -38,6 +38,15 @@
         display: flex;
         justify-content: center;
         gap: 0.2vw;
+        .fa-grip-lines
+        &:hover{
+            color: map-get($estilos, colorPrincipal);
+        }
+        &:active{
+            @keyframes identifier {
+                
+            }
+        }
     }
 
 }
