@@ -3,17 +3,15 @@
 /* ******************************************* */
 
 #products {
-    display: grid;
+    @include ProductsGridPropierties;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
     "product1 product2 product3 product4"
     "product5 product6 product7 product8"
+    "product9 product10 product11 product12"
     ;
-    gap: 2vw;
-    margin: 2.5vw;
-    margin-top: 5vw;
-    @for $i from 1 to 6 {
+    @for $i from 1 to 13 {
         .product#{$i} {
             grid-area: product#{$i};
             img {
@@ -22,32 +20,90 @@
         }
     }
     .product {
-        background-color: grey;
-        padding: 1vw;
-        margin: 1.5vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5vw;
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1vw;
-            .btn-light:hover{
-                color: map-get($estilos, colorPrincipal);
-            }
-        }
+        @include products;
     }
 }
+
+.vertodo_text{
+    text-decoration: none;
+    color: map-get($estilos, colorPrincipal);
+    &:hover {
+        color: map-get($estilos, colorSecundario);
+    }
+}
+
 .return { /* USADO PARA TODOS LOS RETURN */
     display: flex;
-    margin-top: 2vw;
+    margin-top: 4vw;
     justify-content: center;
     text-decoration: none;
     color: black;
     &:hover{
         color:map-get($estilos, colorPrincipal);
+    }
+}
+
+/* calzado.html */
+#calzado {
+    @include ProductsGridPropierties;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "product1 product2 product3 product4"
+    "product5 product6 product7 product8"
+    ;
+    @for $i from 1 to 9 {
+        .product#{$i} {
+            grid-area: product#{$i};
+            img {
+                @include boxSize;
+            }
+        }
+    }
+    .product {
+       @include products;
+    }
+}
+
+/* indumentaria.html */
+#indumentaria {
+    @include ProductsGridPropierties;
+    grid-template-rows: 1, 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "product1 product2 product3 product4"
+    ;
+    @for $i from 1 to 5 {
+        .product#{$i} {
+            grid-area: product#{$i};
+            img {
+                @include boxSize;
+            }
+        }
+    }
+    .product {
+       @include products;
+    }
+}
+
+/* accesorios.html */
+#accesorios {
+    @include ProductsGridPropierties;
+    grid-template-rows: 1, 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "product1 product2 product3 product4"
+    ;
+    @for $i from 1 to 5 {
+        .product#{$i} {
+            grid-area: product#{$i};
+            img {
+                @include boxSize;
+            }
+        }
+    }
+    .product {
+       @include products;
     }
 }
 

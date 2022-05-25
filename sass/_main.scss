@@ -33,21 +33,6 @@
     .article1 img, .article2 img, .article3 img, .article4 img {
         @include boxSize;
     }
-    .ellipsis {
-        grid-area: ellipsis;
-        display: flex;
-        justify-content: center;
-        gap: 0.2vw;
-        .fa-grip-lines
-        &:hover{
-            color: map-get($estilos, colorPrincipal);
-        }
-        &:active{
-            @keyframes identifier {
-                
-            }
-        }
-    }
 
 }
 .productos {

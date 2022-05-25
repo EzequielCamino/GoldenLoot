@@ -104,14 +104,42 @@
         "product3 product4"
         "product5 product6"
         "product7 product8"
+        "product9 product10"
+        "product11 product12"
         ;
-        gap: 2vw;
-        margin-top: 5vw;
     }
     .return {
         margin-bottom: 5vw;
     }
+    #calzado{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "product1 product2"
+        "product3 product4"
+        "product5 product6"
+        ;
+    }
+    #indumentaria{
+        display: grid;
+        grid-template-rows: 1, 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "product1 product2"
+        ;
+    }
+    #accesorios{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "product1 product2"
+        "product3 product4"
+        ;
+    }
 }
+
 
 /* ENCARGOS */
 @media screen and (max-width:768px) {
@@ -135,6 +163,14 @@
         }
     }
 }
+
+/* PRIVACIDAD */
+@media screen and (max-width:768px){
+    .politics_h6{
+        font-size: 3vw;
+    }
+}
+
 
 /* ******************************************* */
 /* **************FIN MEDIA QUERIES************ */

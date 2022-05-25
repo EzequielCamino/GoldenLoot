@@ -8,17 +8,20 @@
     gap: 5px;
     text-decoration: none;
 }
+.accordion{
+    width: 60vw;
+    .accordion-button{
+        &:focus{
+            border-color: map-get($estilos, colorPrincipal);
+            box-shadow: 0 0 0 0.25rem rgb(255, 196, 46 / 25%);
+        }
+        &:not(.collapsed){
+            color: black;
+            background-color: map-get($estilos, colorPrincipal);
+        }
+    }
+} 
 
-.accordion-button{
-    &:focus{
-        border-color: map-get($estilos, colorPrincipal);
-        box-shadow: 0 0 0 0.25rem rgb(255, 196, 46 / 25%);
-    }
-    &:not(.collapsed){
-        color: black;
-        background-color: map-get($estilos, colorPrincipal);
-    }
-}
 
 /* ******************************************* */
 /* ***************END faq.html**************** */
